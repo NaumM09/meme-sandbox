@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
         <div className="flex justify-center gap-8 mt-4">
           <a
-            href="https://twitter.com"
+            href="https://x.com/startermemez"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-200 transition-colors"
@@ -31,7 +31,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className="hover:text-gray-200 transition-colors"
           >
-            GitHub
+            Telegram
           </a>
         </div>
         <p className="mt-4 text-sm text-gray-300">
