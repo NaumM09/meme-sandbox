@@ -1,46 +1,69 @@
-import React from 'react';
-import './App.css';
-
-const coursePricing = [
-  {
-    title: 'Basic Course',
-    price: '$29.99',
-    description: 'This course covers the basics of meme coins and how to get started.',
-    features: ['Basic Introduction', 'Community Access', 'Email Support'],
-    buttonText: 'Enroll Now'
-  },
-  {
-    title: 'Advanced Course',
-    price: '$79.99',
-    description: 'Dive deeper into meme coin strategies, trading, and market analysis.',
-    features: ['Advanced Strategies', 'Expert Community Access', '1-on-1 Coaching'],
-    buttonText: 'Get Started'
-  },
-  {
-    title: 'Master Course',
-    price: '$149.99',
-    description: 'Become an expert in meme coins with personalized mentoring and hands-on experience.',
-    features: ['Expert Strategies', 'Lifetime Access', 'Personalized Mentoring'],
-    buttonText: 'Master the Market'
-  }
-];
+import React, { useState } from "react";
+import './Pricing.css';
 
 const Pricing = () => {
+  const [selectedPlan, setSelectedPlan] = useState(null);
+
+  const pricingOptions = [
+    {
+      name: "Basic Plan",
+      price: "$19.99/month",
+      description: "Access to basic course materials and resources.",
+      features: [
+        "1 Course Access",
+        "Email Support",
+        "Community Access",
+        "Weekly Newsletter"
+      ],
+    },
+    {
+      name: "Premium Plan",
+      price: "$49.99/month",
+      description: "All features of Basic Plan plus advanced content.",
+      features: [
+        "5 Course Access",
+        "Priority Email Support",
+        "Exclusive Webinars",
+        "Private Telegram Group",
+        "Weekly 1-on-1 Coaching"
+      ],
+    },
+    {
+      name: "Ultimate Plan",
+      price: "$99.99/month",
+      description: "Full access to all course materials and personalized coaching.",
+      features: [
+        "All Course Access",
+        "Personalized Coaching",
+        "Exclusive Content",
+        "Lifetime Updates",
+        "Direct Access to Course Creators"
+      ],
+    },
+  ];
+
   return (
-    <section className="course-pricing">
-      <h2>Choose Your Plan</h2>
-      <div className="pricing-container">
-        {coursePricing.map((course, index) => (
-          <div className="pricing-card" key={index}>
-            <h3>{course.title}</h3>
-            <p className="price">{course.price}</p>
-            <p className="description">{course.description}</p>
-            <ul className="features">
-              {course.features.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
+    <section className="pricing">
+      <h2 className="pricing-heading">Choose Your Plan</h2>
+      <div className="pricing-cards">
+        {pricingOptions.map((option, index) => (
+          <div
+            key={index}
+            className={`pricing-card ${selectedPlan === option.name ? "selected" : ""}`}
+            onClick={() => setSelectedPlan(option.name)}
+          >
+            <h3 className="pricing-title">{option.name}</h3>
+            <p className="pricing-price">{option.price}</p>
+            <p className="pricing-description">{option.description}</p>
+            <ul className="pricing-features">
+              {option.features.map((feature, i) => (
+                <li key={i} className="pricing-feature">
+                  <span role="img" aria-label="checkmark" className="checkmark">✔️</span>
+                  {feature}
+                </li>
               ))}
             </ul>
-            <button className="btn-primary">{course.buttonText}</button>
+            <button className="btn-primary">Select {option.name}</button>
           </div>
         ))}
       </div>
