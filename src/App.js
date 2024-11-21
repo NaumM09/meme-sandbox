@@ -9,8 +9,6 @@ import Footer from './Footer';
 import Hero from './HeroSection';
 
 function App() {
-
-function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
