@@ -19,45 +19,70 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #6A0DAD, #FFD700);
   color: white;
   text-align: center;
-  padding: 100px 20px;
-  animation: fadeIn 2s ease-in;
 }
 
-.hero h1 {
-  font-size: 4rem;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+  margin-bottom: 2rem;
 }
 
-.hero p {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.cta-button {
-  background: #fff;
-  color: #121212;
-  font-size: 1.5rem;
-  padding: 15px 35px;
-  border-radius: 50px;
-  border: none;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  letter-spacing: 1px;
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
 }
 
-.cta-button:hover {
-  background-color: #ff6347;
-  transform: scale(1.1);
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.hero-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* Optional for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for depth */
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-image-container {
+    margin-top: 2rem;
+  }
+
+  .hero-image {
+    width: 80%; /* Make the image smaller for mobile devices */
+  }
+}
+
 
 /* Why Memecoin Beginners */
 .why-us {
