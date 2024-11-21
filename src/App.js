@@ -10,7 +10,7 @@ import Hero from './HeroSection';
 function App() {
   return (
     <div>
-    <HeroSection/>
+    <Hero />
       <MemeCoinTimeline />
       <CourseOverview />
       <Testimonials />
