@@ -5,7 +5,7 @@ import CourseOverview from './CourseOverview';
 import Testimonials from './Testimonials';
 import Pricing from './Pricing';
 import Footer from './Footer';
-import HeroSection from './HeroSection';
+import Hero from './HeroSection';
 
 function App() {
   return (
