@@ -16,10 +16,10 @@ const CourseOverview = () => {
 
         <h3>Course Features</h3>
         <ul>
-          <li>Comprehensive Lessons: 10+ modules with engaging videos and tutorials.</li>
-          <li>Interactive Quizzes: Test your knowledge as you progress.</li>
+          <li>Comprehensive Lessons: 10+ modules. </li>
           <li>Exclusive Community: Join a private group of memecoin enthusiasts for networking and discussions.</li>
           <li>Lifetime Access: Revisit the material whenever you need to refresh your knowledge.</li>
+           <li>Whale Wallet Addresses: Find the latest investment by tracking whale investors.</li>
         </ul>
       </div>
     </section>
