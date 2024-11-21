@@ -32,6 +32,13 @@ const memeCoins = [
     image: 'https://cryptologos.cc/logos/kishu-inu-kishu-logo.png',
     description: 'A meme coin that quickly garnered attention with an active online community and numerous giveaways.',
   },
+  // New "next meme coin" section
+  {
+    name: 'Future MemeCoin',
+    year: 2024,
+    image: 'https://cryptologos.cc/logos/dogecoin-doge-logo.png', // Placeholder, replace with future meme coin image
+    description: 'The next meme coin you will be investing in after completing our course. Be ready for success!',
+  }
 ];
 
 const MemeCoinTimeline = () => {
