@@ -19,8 +19,9 @@ function App() {
   if (isLoading) {
     return <Loader />;
   }
+
   return (
-    <div>
+      <div>
     <Hero />
       <MemeCoinTimeline />
       <CourseOverview />
@@ -32,3 +33,5 @@ function App() {
 }
 
 export default App;
+
+
