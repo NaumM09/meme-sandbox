@@ -9,8 +9,7 @@ const Hero = () => {
         <h1>Welcome to MemeCoin Beginners</h1>
         <p>Master the art of trading memecoins with ease and fun!</p>
         <div className="cta-buttons">
-          <button className="btn btn-primary">Get Started</button>
-          <button className="btn btn-secondary">Learn More</button>
+          <button className="btn btn-primary">Enroll in Course</button>
         </div>
       </div>
       <div className="hero-image-container">
