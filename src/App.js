@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Loader from './components/Loader'
+import Loader from './Loader'
 import './App.css';
 import MemeCoinTimeline from './MemeCoinTimeline';
 import CourseOverview from './CourseOverview';
