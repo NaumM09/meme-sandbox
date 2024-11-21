@@ -164,76 +164,83 @@ h1, h2, h3 {
   animation-delay: 1.5s;
 }
 
-/* Pricing Section */
-.pricing {
+/* Course Pricing Section */
+.course-pricing {
   text-align: center;
-  padding: 100px 20px;
-  background: #222;
+  padding: 3rem 2rem;
+  background-color: #f7f9fc;
 }
 
-.pricing h2 {
-  font-size: 3rem;
-  margin-bottom: 40px;
-  color: #fff;
+.course-pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #6A0DAD;
 }
 
-.pricing .pricing-options {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-bottom: 50px;
+.pricing-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
 .pricing-option {
-  background: #333;
-  padding: 40px;
-  border-radius: 20px;
-  width: 250px;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.pricing-option:hover {
-  transform: translateY(-10px);
 }
 
 .pricing-option h3 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #ff6a00;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #32CD32;
 }
 
 .pricing-option p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  color: #bbb;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
-.pricing-option .price {
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 20px;
-  color: #fff;
-}
-
-.discount {
-  font-size: 1.5rem;
-  color: #ff6347;
-  margin-bottom: 30px;
-}
-
-.cta-button {
-  background: #ff6a00;
+.pricing-option button {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #32CD32;
   color: white;
-  font-size: 1.5rem;
-  padding: 15px 35px;
-  border-radius: 50px;
-  transition: transform 0.3s ease;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.cta-button:hover {
-  transform: scale(1.1);
+.pricing-option button:hover {
+  background-color: #28a745;
 }
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .pricing-container {
+    grid-template-columns: 1fr; /* Stack pricing options on small screens */
+    gap: 1rem;
+  }
+  
+  .pricing-option {
+    padding: 1.5rem;
+  }
+
+  .pricing-option h3 {
+    font-size: 1.4rem;
+  }
+
+  .pricing-option p {
+    font-size: 1rem;
+  }
+
+  .pricing-option button {
+    font-size: 0.9rem;
+  }
+}
+
 
 /* Footer Section */
 footer {
