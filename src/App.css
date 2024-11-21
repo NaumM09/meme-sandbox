@@ -1,38 +1,395 @@
-.App {
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #121212;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background: #fff;
+  color: #121212;
+  font-size: 1.5rem;
+  padding: 15px 35px;
+  border-radius: 50px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  background-color: #ff6347;
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Why Memecoin Beginners */
+.why-us {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #1a1a1a;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+.why-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.why-us p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #aaa;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Course Overview Section */
+.course-overview {
+  text-align: center;
+  padding: 80px 20px;
+  background: #222;
+}
+
+.course-overview h2 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.course-overview ul {
+  list-style: none;
+  padding: 0;
+}
+
+.course-overview ul li {
+  font-size: 1.5rem;
+  margin: 15px 0;
+  transition: transform 0.3s ease;
+}
+
+.course-overview ul li:hover {
+  transform: translateX(10px);
+}
+
+.course-overview ul li::before {
+  content: '👉';
+  margin-right: 10px;
+  color: #ff6a00;
+}
+
+@media screen and (max-width: 768px) {
+  .course-overview ul li {
+    font-size: 1.2rem;
+  }
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 80px 20px;
+  text-align: center;
+  background: #121212;
+  color: #eee;
+}
+
+.testimonials h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.testimonial {
+  font-size: 1.5rem;
+  margin: 30px 0;
+  font-style: italic;
+  opacity: 0;
+  animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.testimonial span {
+  display: block;
+  margin-top: 10px;
+  color: #ff6a00;
+}
+
+.testimonial:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.testimonial:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.testimonial:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+/* Pricing Section */
+.pricing {
+  text-align: center;
+  padding: 100px 20px;
+  background: #222;
+}
+
+.pricing h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.pricing .pricing-options {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.pricing-option {
+  background: #333;
+  padding: 40px;
+  border-radius: 20px;
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pricing-option:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-option h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ff6a00;
+}
+
+.pricing-option p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #bbb;
+}
+
+.pricing-option .price {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #fff;
+}
+
+.discount {
+  font-size: 1.5rem;
+  color: #ff6347;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  background: #ff6a00;
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px 35px;
+  border-radius: 50px;
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+  background: #121212;
+  color: #fff;
+  padding: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.footer-links li {
+  display: inline;
+  margin: 0 20px;
+  font-size: 1.2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footer-links li a {
+  text-decoration: none;
+  color: #bbb;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #ff6a00;
+}
+
+.social-media a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #ff6347;
+}
+
+/* Container for Meme Coin Timeline */
+.meme-coin-timeline {
+  text-align: center;
+  padding: 80px 20px;
+  background: #121212;
+  color: #fff;
+}
+
+.meme-coin-timeline h2 {
+  font-size: 3rem;
+  margin-bottom: 40px;
+  color: #ff6a00;
+}
+
+/* Timeline container */
+.timeline-container {
+  position: relative;
   display: flex;
   flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Timeline item style */
+.timeline-item {
+  position: relative;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  width: 80%;
+  background: #222;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.7s ease-out;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
-.App-link {
-  color: #61dafb;
+.timeline-item:nth-child(odd) {
+  animation-delay: 0.3s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.timeline-item:nth-child(even) {
+  animation-delay: 0.6s;
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Year labels */
+.timeline-year {
+  position: absolute;
+  top: -30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6a00;
+  background: #121212;
+  padding: 5px 20px;
+  border-radius: 50px;
+  border: 2px solid #ff6a00;
+  text-transform: uppercase;
+}
+
+/* Coin image */
+.coin-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+/* Timeline content */
+.timeline-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.timeline-content h3 {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.timeline-content p {
+  font-size: 1.2rem;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+  .timeline-container {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+
+  .timeline-item {
+    width: 100%;
+  }
+
+  .timeline-year {
+    position: relative;
+    top: unset;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+  }
+
+  .coin-image {
+    width: 50px;
+    height: 50px;
   }
 }
