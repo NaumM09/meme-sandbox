@@ -9,6 +9,7 @@ import HeroSection from './HeroSection';
 
 function App() {
   return (
+    <div>
     <HeroSection/>
       <MemeCoinTimeline />
       <CourseOverview />
