@@ -178,153 +178,121 @@ body {
   color: #333;
 }
 
-/* Course Pricing */
-.course-pricing {
+/* Pricing Section */
+.pricing {
   padding: 4rem 2rem;
-  text-align: center;
   background-color: #f7f9fc;
+  text-align: center;
 }
 
-.course-pricing h2 {
+.pricing-heading {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #6A0DAD;
+  margin-bottom: 3rem;
+  color: #333;
 }
 
-.pricing-container {
+.pricing-cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
-  justify-items: center;
 }
 
 .pricing-card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   padding: 2rem;
-  width: 100%;
-  max-width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(1);
+  transition: transform 0.3s ease;
 }
 
 .pricing-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
 }
 
-.pricing-card h3 {
+.pricing-card.selected {
+  border: 2px solid #FFD700;
+}
+
+.pricing-title {
   font-size: 1.8rem;
-  color: #6A0DAD;
-  margin-bottom: 1rem;
+  color: #333;
 }
 
-.price {
-  font-size: 2rem;
+.pricing-price {
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #32CD32;
-  margin-bottom: 1rem;
+  color: #FFD700;
+  margin: 1rem 0;
 }
 
-.description {
+.pricing-description {
   font-size: 1rem;
-  margin-bottom: 1.5rem;
   color: #555;
-}
-
-.features {
-  list-style-type: none;
-  padding: 0;
   margin-bottom: 2rem;
 }
 
-.features li {
+.pricing-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+}
+
+.pricing-feature {
   font-size: 1rem;
-  color: #333;
-  margin-bottom: 0.5rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.checkmark {
+  margin-right: 10px;
+  color: #32CD32;
 }
 
 .btn-primary {
-  background-color: #32CD32;
-  color: white;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
+  background-color: #FFD700;
   border: none;
-  border-radius: 8px;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  color: #fff;
   cursor: pointer;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
-  background-color: #28a745;
+  background-color: #FF4500;
 }
 
-/* Mobile and Tablet Breakpoints */
+/* Media Queries for Smaller Screens (Mobile First) */
 @media (max-width: 768px) {
-  .course-pricing h2 {
-    font-size: 2rem;
-  }
-
-  .pricing-container {
-    grid-template-columns: 1fr; /* Stack cards on small screens */
-  }
-
-  .pricing-card {
-    padding: 1.5rem;
-    width: 90%; /* Make cards take more space on small screens */
-  }
-
-  .pricing-card h3 {
-    font-size: 1.6rem;
-  }
-
-  .price {
-    font-size: 1.8rem;
-  }
-
-  .description {
-    font-size: 0.9rem;
-  }
-
-  .features li {
-    font-size: 0.9rem;
-  }
-
-  .btn-primary {
-    font-size: 0.9rem;
-    padding: 0.7rem 1.2rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .pricing-container {
-    padding: 1rem;
+  .pricing-cards {
+    grid-template-columns: 1fr; /* Stack pricing options */
   }
 
   .pricing-card {
     padding: 1rem;
   }
 
-  .pricing-card h3 {
-    font-size: 1.5rem;
+  .pricing-title {
+    font-size: 1.4rem;
   }
 
-  .price {
-    font-size: 1.6rem;
+  .pricing-price {
+    font-size: 1.4rem;
   }
 
-  .description {
-    font-size: 0.85rem;
+  .pricing-description {
+    font-size: 1rem;
   }
 
-  .features li {
-    font-size: 0.8rem;
-  }
-
-  .btn-primary {
-    font-size: 0.85rem;
-    padding: 0.6rem 1rem;
+  .pricing-card button {
+    font-size: 0.9rem;
   }
 }
 
