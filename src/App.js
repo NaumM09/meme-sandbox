@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import MemeCoinTimeline from './components/MemeCoinTimeline';
-import CourseOverview from './components/CourseOverview';
-import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
-import Footer from './components/Footer';
+import MemeCoinTimeline from './MemeCoinTimeline';
+import CourseOverview from './CourseOverview';
+import Testimonials from './Testimonials';
+import Pricing from './Pricing';
+import Footer from './Footer';
 
 function App() {
   return (
