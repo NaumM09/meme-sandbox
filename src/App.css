@@ -17,6 +17,79 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+/* Loader container styles */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #121212; /* Match the website's dark theme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Loader content */
+.loader-content {
+  text-align: center;
+}
+
+/* Loader logo */
+.loader-logo {
+  width: 150px;
+  height: auto;
+  animation: spin 2s linear infinite;
+}
+
+/* Spinning animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Loader animation (optional: bouncing dots or similar effect) */
+.loader-animation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.loader-animation::after,
+.loader-animation::before,
+.loader-animation span {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #ff6a00;
+  border-radius: 50%;
+  animation: bounce 1.2s infinite ease-in-out;
+}
+
+.loader-animation::after {
+  animation-delay: 0.2s;
+}
+
+.loader-animation::before {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  0%, 80%, 100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}
+
+
 /* Hero Section */
 .hero {
   display: flex;
