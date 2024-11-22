@@ -1,22 +1,30 @@
 import React from 'react';
+import heroImage from './hero-image.png'; // Adjust the path based on your project structure
 import './App.css';
-import heroImage from './hero-image.png'; // Replace with the path to your image
 
-const Hero = () => {
+const HeroSection = () => {
   return (
     <section className="hero">
+      {/* Sparkle Decorations */}
+      <div className="sparkle" style={{ top: '10%', left: '15%' }}></div>
+      <div className="sparkle" style={{ top: '20%', right: '10%' }}></div>
+      <div className="sparkle" style={{ bottom: '15%', left: '5%' }}></div>
+
+      {/* Hero Content */}
       <div className="hero-content">
-        <h1>Welcome to MemeCoin Beginners</h1>
-        <p>Master the art of trading memecoins with ease and fun!</p>
+        <h1>Welcome to MemeCoin Beginners!</h1>
+        <p>Learn, trade, and profit with the best guide to the crypto craze.</p>
         <div className="cta-buttons">
-          <button className="btn btn-primary">Enroll in Course</button>
+          <button className="btn btn-primary">Get Started</button>
+          <button className="btn btn-outline">Learn More</button>
         </div>
       </div>
-      <div className="hero-image-container">
-        <img src={heroImage} alt="Hero" className="hero-image" />
-      </div>
+
+      {/* Hero Image */}
+      <img src={heroImage} alt="Hero" className="hero-image" />
     </section>
   );
 };
 
-export default Hero;
+export default HeroSection;
+
