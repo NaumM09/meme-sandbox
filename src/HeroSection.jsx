@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="hero">
       <div className="hero-content">
         <h1>Welcome to MemeCoin Beginners</h1>
-        <p>Master the art of trading memecoins with ease and fun!</p>
+        <p>Master the art of trading memecoins with ease!</p>
         <div className="cta-buttons">
           <button className="btn btn-primary">Get Started</button>
         </div>
