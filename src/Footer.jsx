@@ -18,15 +18,7 @@ const Footer = () => {
             Twitter
           </a>
           <a
-            href="https://discord.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-gray-200 transition-colors"
-          >
-            Discord
-          </a>
-          <a
-            href="https://github.com"
+            href="https://t.me/memecoinbeginner"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-gray-200 transition-colors"
