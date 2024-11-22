@@ -7,7 +7,7 @@ import Testimonials from './Testimonials';
 import Pricing from './Pricing';
 import Footer from './Footer';
 import Hero from './HeroSection';
-import Navbar from './Navbar';
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +23,6 @@ function App() {
 
   return (
       <div>
-    <Navbar />
     <Hero />
       <MemeCoinTimeline />
       <CourseOverview />
