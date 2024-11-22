@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="centered-navbar">
       <a
-        href="https://telegram.org"
+        href="https://t.me/memecoinbeginner"
         target="_blank"
         rel="noopener noreferrer"
         className="nav-icon"
@@ -14,7 +14,7 @@ const Navbar = () => {
         <i className="fab fa-telegram-plane"></i>
       </a>
       <a
-        href="https://x.com"
+        href="https://x.com/startermemez"
         target="_blank"
         rel="noopener noreferrer"
         className="nav-icon"
