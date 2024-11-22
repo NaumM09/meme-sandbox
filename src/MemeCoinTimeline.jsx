@@ -37,7 +37,7 @@ const memeCoins = [
   {
     name: 'Future MemeCoin',
     year: 2024,
-    image: 'memeCoinBeginner', // Placeholder, replace with future meme coin image
+    image: memeCoinBeginner, // Placeholder, replace with future meme coin image
     description: 'The next meme coin you will be investing in after completing our course. Be ready for success!',
   }
 ];
