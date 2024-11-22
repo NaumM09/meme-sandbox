@@ -598,100 +598,50 @@ footer {
   color: #ff6347;
 }
 
-/* Meme Coin Timeline Styles */
+/* Meme Coin Timeline */
 .meme-coin-timeline {
-  padding: 4rem 2rem;
+  padding: 3rem 2rem;
   background-color: #f7f9fc;
   text-align: center;
 }
 
-.meme-coin-timeline h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  color: #6a0dad;
-}
-
 .timeline-container {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers cards horizontally */
+  align-items: center; /* Centers cards vertically in their row */
+  gap: 2rem; /* Adds spacing between cards */
 }
 
-.timeline-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.timeline-item:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-}
-
-.timeline-year {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #ff4500;
-  margin-bottom: 1rem;
-}
-
-.timeline-content {
-  text-align: center;
-}
-
-.coin-image {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 1rem;
-  object-fit: contain;
-}
-
-.timeline-item h3 {
-  font-size: 1.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.timeline-item p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.5;
-}
-
-/* Add animation for spinning effect */
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* Meme Coin Timeline Styles */
 .timeline-item {
   background-color: white;
   padding: 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 80%;
+  width: 250px; /* Sets a uniform width for cards */
   text-align: center;
   transition: transform 0.3s ease-in-out;
+}
+
+.timeline-item:hover {
+  transform: rotate(10deg) scale(1.1); /* Adds hover spin and zoom effect */
+}
+
+.timeline-year {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #32CD32;
+  margin-bottom: 1rem;
 }
 
 .coin-image {
   width: 80px;
   height: 80px;
   margin-bottom: 1rem;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
-.timeline-item:hover .coin-image {
-  animation: spin 1s linear infinite;
+.coin-image:hover {
+  transform: scale(1.2); /* Slight zoom effect on image hover */
 }
 
