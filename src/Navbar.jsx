@@ -1,29 +1,31 @@
 import React from 'react';
+import { FaTelegramPlane, FaXTwitter } from 'react-icons/fa';
 import './App.css';
 
 const Navbar = () => {
   return (
     <nav className="centered-navbar">
       <a
-        href="https://t.me/memecoinbeginner"
+        href="https://telegram.org"
         target="_blank"
         rel="noopener noreferrer"
         className="nav-icon"
         aria-label="Telegram"
       >
-        <i className="fab fa-telegram-plane"></i>
+        <FaTelegramPlane />
       </a>
       <a
-        href="https://x.com/startermemez"
+        href="https://x.com"
         target="_blank"
         rel="noopener noreferrer"
         className="nav-icon"
-        aria-label="Twitter (X)"
+        aria-label="X (Twitter)"
       >
-        <i className="fab fa-x-twitter"></i>
+        <FaXTwitter />
       </a>
     </nav>
   );
 };
 
 export default Navbar;
+
