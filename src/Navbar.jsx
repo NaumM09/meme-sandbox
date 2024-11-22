@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaTelegramPlane, FaXTwitter } from 'react-icons/fa';
+import { FaTelegramPlane, FaTwitter } from 'react-icons/fa';
 import './App.css';
 
 const Navbar = () => {
