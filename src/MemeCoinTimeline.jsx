@@ -1,4 +1,5 @@
 import React from 'react';
+import memeCoinBeginner from './memecoin-beginner-logo.png';
 import './App.css';
 
 const memeCoins = [
@@ -36,7 +37,7 @@ const memeCoins = [
   {
     name: 'Future MemeCoin',
     year: 2024,
-    image: 'https://cryptologos.cc/logos/dogecoin-doge-logo.png', // Placeholder, replace with future meme coin image
+    image: 'memeCoinBeginner', // Placeholder, replace with future meme coin image
     description: 'The next meme coin you will be investing in after completing our course. Be ready for success!',
   }
 ];
