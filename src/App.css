@@ -89,6 +89,33 @@ h1, h2, h3 {
   }
 }
 
+/* Centered Navbar */
+.centered-navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+  background-color: #222;
+}
+
+.nav-icon {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-icon:hover {
+  transform: scale(1.2);
+  color: #1da1f2; /* Twitter/X Blue */
+}
+
+.nav-icon i {
+  display: inline-block;
+}
+
+
 /* Hero Section */
 .hero {
   display: flex;
