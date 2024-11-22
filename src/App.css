@@ -91,18 +91,22 @@ h1, h2, h3 {
 
 /* Centered Navbar */
 .centered-navbar {
+  position: absolute;  /* Positioned on top of the Hero section */
+  top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
   padding: 1rem 0;
-  background-color: #222;
+  z-index: 10;  /* Makes sure it's above the hero section */
+  background: rgba(0, 0, 0, 0.5);  /* Transparent dark background */
 }
 
 .nav-icon {
   font-size: 2rem;
   color: white;
-  text-decoration: none;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
@@ -111,10 +115,42 @@ h1, h2, h3 {
   color: #1da1f2; /* Twitter/X Blue */
 }
 
-.nav-icon i {
-  display: inline-block;
+/* Hero Section with Integrated Navbar */
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(180deg, #6A0DAD, #FFD700);
+  color: white;
 }
 
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Animation for Hero Text */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 /* Hero Section */
 .hero {
