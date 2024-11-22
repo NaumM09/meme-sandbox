@@ -662,3 +662,36 @@ footer {
   color: #555;
   line-height: 1.5;
 }
+
+/* Add animation for spinning effect */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Meme Coin Timeline Styles */
+.timeline-item {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.coin-image {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.timeline-item:hover .coin-image {
+  animation: spin 1s linear infinite;
+}
+
