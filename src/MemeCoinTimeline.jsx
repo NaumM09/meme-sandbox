@@ -37,7 +37,7 @@ const memeCoins = [
     name: 'Future MemeCoin',
     year: 2024,
     image: memeCoinBeginner, 
-    description: 'The next meme coin you will be investing in after completing our course. Be ready for success!',
+    description: 'Imagine discovering the next big meme coin. This is where your journey starts after mastering the course!',
   },
 ];
 
