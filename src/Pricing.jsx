@@ -21,10 +21,10 @@ const Pricing = () => {
       price: "$99.99",
       description: "All features of Basic Plan plus advanced content.",
       features: [
-      "How Set Up Crypo Wallet"
-"Technical Analysis"
-        "Understanding Risks and Reward"
-        "Downloadable Course Material"
+      "How Set Up Crypo Wallet",
+"Technical Analysis",
+        "Understanding Risks and Reward",
+        "Downloadable Course Material",
 "Weekly Newsletter"
       ],
     },
@@ -34,11 +34,11 @@ const Pricing = () => {
       description: "Full access to all course materials and personalized coaching.",
       features: [
       "How Set Up Crypo Wallet"
-"Technical Analysis"
-        "Understanding Risks and Reward"
-        "Tracking Whale Wallets"
-        "Downloadable Course Material"
-"Weekly Newsletter"
+"Technical Analysis",
+        "Understanding Risks and Reward",
+        "Tracking Whale Wallets",
+        "Downloadable Course Material",
+"Weekly Newsletter",
 "Exclusive Bonus Content",
 "Lifetime Updates on All Courses",
 "Access to Ask the Instructor Sessions"
