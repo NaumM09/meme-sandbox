@@ -89,70 +89,54 @@ h1, h2, h3 {
   }
 }
 
-
 /* Hero Section */
 .hero {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  text-align: center;
   padding: 4rem 2rem;
   background: linear-gradient(180deg, #6A0DAD, #FFD700);
   color: white;
-  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-content {
-  flex: 1;
-  max-width: 600px;
-  margin-bottom: 2rem;
+  z-index: 2; /* Ensure the content is above the image */
+  position: relative;
 }
 
-.hero-content h1 {
+.hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  animation: fadeInSlideDown 2s ease-in-out forwards;
 }
 
-.hero-content p {
+.hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
+  animation: fadeIn 2s 1.5s ease-in-out forwards;
+  opacity: 0;
 }
 
-.cta-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.hero-image-container {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
-
+/* Hero Image */
 .hero-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px; /* Optional for rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional for depth */
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 40%;
+  opacity: 0.9;
+  z-index: 1; /* Place image below content */
+  animation: slideIn 2s ease-in-out forwards;
 }
 
-/* Media Queries for Smaller Screens */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
+/* Keyframes for Hero Image */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
   }
-
-  .hero-content {
-    text-align: center;
-  }
-
-  .hero-image-container {
-    margin-top: 2rem;
-  }
-
-  .hero-image {
-    width: 80%; /* Make the image smaller for mobile devices */
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
