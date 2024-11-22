@@ -1,5 +1,7 @@
 import React from 'react';
 import memeCoinBeginner from './memecoin-beginner-logo.png';
+import safeMoon from './safemoon.png';
+import kishuInu from './kishu-inu.png';
 import './App.css';
 
 const memeCoins = [
@@ -18,7 +20,7 @@ const memeCoins = [
   {
     name: 'SafeMoon',
     year: 2021,
-    image: 'https://cryptologos.cc/logos/safemoon-sfm-logo.png',
+    image: safeMoon,
     description: 'A token that gained traction with a unique tokenomics model and passionate community support.',
   },
   {
@@ -30,7 +32,7 @@ const memeCoins = [
   {
     name: 'Kishu Inu',
     year: 2021,
-    image: 'https://cryptologos.cc/logos/kishu-inu-kishu-logo.png',
+    image: kishuInu,
     description: 'A meme coin that quickly garnered attention with an active online community and numerous giveaways.',
   },
   {
