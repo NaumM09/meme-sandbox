@@ -91,54 +91,155 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   padding: 4rem 2rem;
   background: linear-gradient(180deg, #6A0DAD, #FFD700);
   color: white;
+  text-align: center;
   position: relative;
   overflow: hidden;
 }
 
+/* Hero Content */
 .hero-content {
-  z-index: 2; /* Ensure the content is above the image */
-  position: relative;
+  max-width: 600px;
+  z-index: 2; /* Ensure the content stays above the background */
+  animation: fadeInSlideDown 1.5s ease-in-out forwards;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
+.hero-content h1 {
+  font-size: 2.8rem;
   margin-bottom: 1rem;
-  animation: fadeInSlideDown 2s ease-in-out forwards;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.hero p {
+.hero-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  animation: fadeIn 2s 1.5s ease-in-out forwards;
-  opacity: 0;
+  line-height: 1.5;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #32CD32;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: #1E90FF;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #007bff;
+  transform: scale(1.05);
 }
 
 /* Hero Image */
-.hero-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  max-width: 40%;
-  opacity: 0.9;
-  z-index: 1; /* Place image below content */
-  animation: slideIn 2s ease-in-out forwards;
+.hero-image-container {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin-top: 2rem;
 }
 
-/* Keyframes for Hero Image */
-@keyframes slideIn {
-  0% {
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  animation: fadeInSlideUp 2s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transform: translateX(50px);
   }
-  100% {
+  to {
     opacity: 1;
-    transform: translateX(0);
   }
 }
+
+@keyframes fadeInSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .hero-image {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+}
+
+
+
 
 
 /* Why Memecoin Beginners */
