@@ -16,7 +16,6 @@ const HeroSection = () => {
         <p>Learn, trade, and profit with the best guide to the crypto craze.</p>
         <div className="cta-buttons">
           <button className="btn btn-primary">Get Started</button>
-          <button className="btn btn-outline">Learn More</button>
         </div>
       </div>
 
