@@ -224,7 +224,7 @@ h1, h2, h3 {
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
   }
 
   .hero-content h1 {
