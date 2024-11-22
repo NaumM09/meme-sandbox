@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import heroImage from '.hero-image.png'; // Replace with your actual image path
+import heroImage from './hero-image.png'; // Replace with your actual image path
 
 const Hero = () => {
   return (
