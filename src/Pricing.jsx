@@ -7,37 +7,41 @@ const Pricing = () => {
   const pricingOptions = [
     {
       name: "Basic Plan",
-      price: "$19.99/month",
+      price: "$49.99",
       description: "Access to basic course materials and resources.",
       features: [
-        "1 Course Access",
-        "Email Support",
-        "Community Access",
+        "How to Set Up Wallet",
+        "Basic Technical Analysis",
+        "Downloadable Course Material",
         "Weekly Newsletter"
       ],
     },
     {
       name: "Premium Plan",
-      price: "$49.99/month",
+      price: "$99.99",
       description: "All features of Basic Plan plus advanced content.",
       features: [
-        "5 Course Access",
-        "Priority Email Support",
-        "Exclusive Webinars",
-        "Private Telegram Group",
-        "Weekly 1-on-1 Coaching"
+      "How Set Up Crypo Wallet"
+"Technical Analysis"
+        "Understanding Risks and Reward"
+        "Downloadable Course Material"
+"Weekly Newsletter"
       ],
     },
     {
       name: "Ultimate Plan",
-      price: "$99.99/month",
+      price: "$149.99",
       description: "Full access to all course materials and personalized coaching.",
       features: [
-        "All Course Access",
-        "Personalized Coaching",
-        "Exclusive Content",
-        "Lifetime Updates",
-        "Direct Access to Course Creators"
+      "How Set Up Crypo Wallet"
+"Technical Analysis"
+        "Understanding Risks and Reward"
+        "Tracking Whale Wallets"
+        "Downloadable Course Material"
+"Weekly Newsletter"
+"Exclusive Bonus Content",
+"Lifetime Updates on All Courses",
+"Access to Ask the Instructor Sessions"
       ],
     },
   ];
