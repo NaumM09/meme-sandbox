@@ -48,7 +48,7 @@ const CourseOutline = () => {
                   <span className="lesson-title">{lesson.title}</span>
                   <span className="lesson-duration">({lesson})</span>
                 </div>
-                <button className="start-btn">START</button>
+                <button className="start-btn">Purchase</button>
               </li>
             ))}
           </ul>
