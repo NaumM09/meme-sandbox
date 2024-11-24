@@ -693,27 +693,44 @@ footer {
   }
 }
 
-/* Course Outline Section */
+/* General styling */
 .course-outline {
-  max-width: 800px;
-  margin: 2rem auto;
-  background-color: #f7f9fc;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 1rem;
+  text-align: center;
   font-family: Arial, sans-serif;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Section Title */
+.course-heading {
+  font-size: 2.5rem;
+  color: #6A0DAD;
+  margin-bottom: 1rem;
+  animation: slideDown 1s ease;
+}
+
+.course-abstract {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Course Sections */
+.course-section {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #333;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #e3e3e3;
+  border-bottom: 2px solid #ddd;
   padding-bottom: 0.5rem;
 }
 
-/* Lesson List */
 .lesson-list {
   list-style: none;
   padding: 0;
@@ -723,40 +740,24 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  background-color: #fff;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-/* Lesson Details */
-.lesson-details {
-  display: flex;
-  flex-direction: column;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
 }
 
 .lesson-title {
   font-size: 1rem;
   font-weight: bold;
-  color: #333;
+  color: #555;
 }
 
-.lesson-duration {
-  font-size: 0.9rem;
-  color: #888;
-}
-
-/* Button */
 .start-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
   background-color: #32CD32;
   color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .start-btn:hover {
@@ -764,22 +765,23 @@ footer {
   transform: scale(1.05);
 }
 
-/* Hover Effects */
-.lesson-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .lesson-item {
-    flex-direction: column;
-    align-items: flex-start;
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-
-  .start-btn {
-    align-self: flex-end;
-    margin-top: 0.5rem;
+  to {
+    opacity: 1;
   }
 }
 
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
