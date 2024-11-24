@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Loader from './Loader'
 import './App.css';
 import MemeCoinTimeline from './MemeCoinTimeline';
-import CourseOverview from './CourseOverview';
+// import CourseOverview from './CourseOverview';
 import Testimonials from './Testimonials';
 import Pricing from './Pricing';
 import Footer from './Footer';
@@ -27,7 +27,7 @@ function App() {
     <Hero />
       <MemeCoinTimeline />
     <CourseOutline />
-      <CourseOverview />
+      // <CourseOverview />
       <Testimonials />
       <Pricing />
       <Footer />
