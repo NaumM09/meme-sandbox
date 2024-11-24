@@ -1,5 +1,5 @@
 import React from 'react';
-import './CourseOutline.css';
+import './App.css';
 
 const courseData = [
   {
