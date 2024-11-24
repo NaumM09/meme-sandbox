@@ -7,7 +7,6 @@ import Testimonials from './Testimonials';
 import Pricing from './Pricing';
 import Footer from './Footer';
 import Hero from './HeroSection';
-import CourseOutline from './courseOutline';
 
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
       <div>
     <Hero />
       <MemeCoinTimeline />
-    <CourseOutline />
       <CourseOverview />
       <Testimonials />
       <Pricing />
