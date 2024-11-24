@@ -1,78 +1,32 @@
-import React, { useState } from "react";
+import React from 'react';
 import './App.css';
 
-const Pricing = () => {
-  const [selectedPlan, setSelectedPlan] = useState(null);
-
-  const pricingOptions = [
-    {
-      name: "Basic Plan",
-      price: "$49.99",
-      description: "Access to basic course materials and resources.",
-      features: [
-        "How to Set Up Wallet",
-        "Basic Technical Analysis",
-        "Downloadable Course Material",
-        "Weekly Newsletter"
-      ],
-    },
-    {
-      name: "Premium Plan",
-      price: "$99.99",
-      description: "All features of Basic Plan plus advanced content.",
-      features: [
-      "How Set Up Crypo Wallet",
-        "Technical Analysis",
-        "Understanding Risks and Reward",
-        "Downloadable Course Material",
-        "Weekly Newsletter"
-      ],
-    },
-    {
-      name: "Ultimate Plan",
-      price: "$149.99",
-      description: "Full access to all course materials and personalized coaching.",
-      features: [
-      "How Set Up Crypo Wallet",
-       "Technical Analysis",
-        "Understanding Risks and Reward",
-        "Tracking Whale Wallets",
-        "Downloadable Course Material",
-"Weekly Newsletter",
-"Exclusive Bonus Content",
-"Lifetime Updates on All Courses",
-"Access to Ask the Instructor Sessions"
-      ],
-    },
-  ];
-
+const PricingPlan = () => {
   return (
-    <section className="pricing">
-      <h2 className="pricing-heading">Choose Your Plan</h2>
-      <div className="pricing-cards">
-        {pricingOptions.map((option, index) => (
-          <div
-            key={index}
-            className={`pricing-card ${selectedPlan === option.name ? "selected" : ""}`}
-            onClick={() => setSelectedPlan(option.name)}
-          >
-            <h3 className="pricing-title">{option.name}</h3>
-            <p className="pricing-price">{option.price}</p>
-            <p className="pricing-description">{option.description}</p>
-            <ul className="pricing-features">
-              {option.features.map((feature, i) => (
-                <li key={i} className="pricing-feature">
-                  <span role="img" aria-label="checkmark" className="checkmark">✔️</span>
-                  {feature}
-                </li>
-              ))}
-            </ul>
-            <button className="btn-primary">Select {option.name}</button>
+    <section className="pricing-plan">
+      <h2 className="pricing-heading">Choose a Pricing Option</h2>
+      <div className="pricing-card">
+        <div className="pricing-info">
+          <h3 className="pricing-title">
+            <span className="price-strike">$399</span> <span className="current-price">$299</span>
+          </h3>
+          <p className="pricing-description">
+            Meme Coin Mastery
+            <br />
+            Everything You Need To Make Consistent Profits Trading Meme Coins or pay in installments:
+          </p>
+          <div className="installment-info">
+            <img src="https://via.placeholder.com/100x40" alt="Payment Options" className="installment-icon" />
+            <p>As low as US$25/month or interest-free</p>
           </div>
-        ))}
+          <button className="toggle-btn">Less</button>
+          <p className="coupon-info">
+            Use coupon code <strong>YTLOYAL50</strong> for a 50% pilot discount! (note, expires in 7 days OR once we reach our student limit cap, whichever comes first)
+          </p>
+        </div>
       </div>
     </section>
   );
 };
 
-export default Pricing;
+export default PricingPlan;
