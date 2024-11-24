@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import './CourseOutline.css';
 
 const courseData = [
   {
@@ -38,6 +38,7 @@ const courseData = [
 const CourseOutline = () => {
   return (
     <section className="course-outline">
+      <h2 className="course-heading">Unlock the Secrets of Meme Coins</h2>
       {courseData.map((section, index) => (
         <div key={index} className="course-section">
           <h3 className="section-title">{section.section}</h3>
@@ -47,7 +48,7 @@ const CourseOutline = () => {
                 <div className="lesson-details">
                   <span className="lesson-title">{lesson.title}</span>
                 </div>
-                <button className="start-btn">Lesson</button>
+                <button className="start-btn">Purchase</button>
               </li>
             ))}
           </ul>
