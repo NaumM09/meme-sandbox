@@ -692,3 +692,94 @@ footer {
     font-size: 2rem;
   }
 }
+
+/* Course Outline Section */
+.course-outline {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #f7f9fc;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #e3e3e3;
+  padding-bottom: 0.5rem;
+}
+
+/* Lesson List */
+.lesson-list {
+  list-style: none;
+  padding: 0;
+}
+
+.lesson-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Lesson Details */
+.lesson-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.lesson-duration {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Button */
+.start-btn {
+  background-color: #32CD32;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.start-btn:hover {
+  background-color: #28a745;
+  transform: scale(1.05);
+}
+
+/* Hover Effects */
+.lesson-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .lesson-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .start-btn {
+    align-self: flex-end;
+    margin-top: 0.5rem;
+  }
+}
+
