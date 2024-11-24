@@ -313,10 +313,6 @@ h1, h2, h3 {
   }
 }
 
-
-
-
-
 /* Why Memecoin Beginners */
 .why-us {
   text-align: center;
@@ -523,6 +519,26 @@ body {
   margin-top: 1rem;
   font-size: 0.9rem;
 }
+
+.buy-now-btn {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buy-now-btn:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 
 /* Footer Section */
