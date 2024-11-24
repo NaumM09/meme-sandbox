@@ -12,16 +12,11 @@ const PricingPlan = () => {
           </h3>
           <p className="pricing-description">
             Meme Coin Mastery
-            <br />
-            Everything You Need To Make Consistent Profits Trading Meme Coins or pay in installments:
           </p>
-          <div className="installment-info">
-            <img src="https://via.placeholder.com/100x40" alt="Payment Options" className="installment-icon" />
-            <p>As low as US$25/month or interest-free</p>
-          </div>
+          
           <button className="toggle-btn">Less</button>
           <p className="coupon-info">
-            Use coupon code <strong>YTLOYAL50</strong> for a 50% pilot discount! (note, expires in 7 days OR once we reach our student limit cap, whichever comes first)
+             Flexible payment options available! Pay in full or choose monthly installments. Start your journey today with ease!
           </p>
         </div>
       </div>
